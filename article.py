@@ -40,3 +40,5 @@ class Article:
         if not isinstance(value, Magazine):
             raise Exception("Magazine must be of type Magazine")
         self._magazine = value
+
+     # unresolved error on exceptions

@@ -40,3 +40,5 @@ class Magazine:
             author_counts[article.author] = author_counts.get(article.author, 0) + 1
         contributing = [author for author, count in author_counts.items() if count > 2]
         return contributing if contributing else None
+
+        # unresolved error on exceptions

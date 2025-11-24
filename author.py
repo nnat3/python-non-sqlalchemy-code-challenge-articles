@@ -30,3 +30,5 @@ class Author:
         if not articles:
             return None
         return list(set([article.magazine.category for article in articles]))
+
+        # unresolved error on exceptions
