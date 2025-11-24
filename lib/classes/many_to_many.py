@@ -7,6 +7,44 @@ class Article:
         self.title = title
         Article.all.append(self)
         
+    @property
+    def title(self):
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        if(
+            isinstance(title, str)
+            and 5 <= len(title) <=50
+            and not hasatrr(self, "title")
+        ):
+
+        self._title = title
+        else:
+            return None
+
+    @property
+    def author(self):
+        return self.author
+
+    @author.setter
+    def author(self, author):
+        if isinstance(author, Author)
+         self._author = author
+        else:
+            return None
+
+    @property
+    def magazine(self):
+        return self._magazine
+    
+    @magazine.setter
+    def magazine(self, magazine):
+        if isinstance(magazine, Magazine):
+            self._magazine = magazine
+        else:
+            return None 
+
 class Author:
     def __init__(self, name):
         if isinstance(name, str) and len(name) > 0:
